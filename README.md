@@ -1,5 +1,3 @@
-# missybur.github.io
-
 ##My Portfolio
 
 1. Run npm install
