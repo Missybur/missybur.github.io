@@ -1,4 +1,19 @@
+require 'contact_me.php';
+use Mailgun\Mailgun;
+
+$mgClient = new Mailgun('key-e33570e346413ccd9a7e605ab65c647a');
+$domain = "missybur.com";
+
+$result = $mgClient->sendMessage($domain, array(
+    'from'    => 'Excited User <mailgun@missybur.com>',
+    'to'      => 'Baz <missybur@missybur.com>',
+    'subject' => 'Hello',
+    'text'    => 'Testing some Mailgun awesomness!'
+));
+
 $(function() {
+
+
 
     $("#contactForm input,#contactForm textarea").jqBootstrapValidation({
         preventSubmit: true,
@@ -21,7 +36,7 @@ $(function() {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
             $.ajax({
-                url: "././mail/contact_me.php",
+                url: "contact_me.php",
                 type: "POST",
                 data: {
                     name: name,
