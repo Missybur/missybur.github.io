@@ -1,0 +1,1 @@
+(function(i,j){i.execute(function(){i.when("A","jQuery").execute(function(i,d){d("body").delegate(".dv-el-title","click",function(){d(j).width()<800&&d(this).closest(".dv-episode-container").toggleClass("dv-el-opened")})})})})(function(){var i=window.AmazonUIPageJS||window.P,j=i._namespace||i.attributeErrors;return j?j("DigitalVideoEpisodeListAssets"):i}(),window);
