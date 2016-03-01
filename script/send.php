@@ -15,7 +15,7 @@ function sendMailgun($data) {
 
   $api_key = 'key-e33570e346413ccd9a7e605ab65c647a';
   $api_domain = 'missybur.com';
-  $send_to = 'missybur@gmail.com';
+  $send_to = 'missybur@missybur.com';
 
     // sumbission data
         $ipaddress = $_SERVER['REMOTE_ADDR'];
